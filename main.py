@@ -2,9 +2,8 @@ import os
 import logging
 
 from flask import Flask, render_template, request, url_for, flash, redirect, send_from_directory, Blueprint
-from flask import current_app
 
-# main = Blueprint('main', __name__)
+main = Blueprint('main', __name__)
 
 @main.route('/')
 def index():
